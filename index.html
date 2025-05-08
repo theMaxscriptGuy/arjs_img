@@ -1,7 +1,7 @@
 <html>
 <head>
-    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/AR-js-org/AR.js/3.4.2/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe@1.6.0/dist/aframe-master.min.js"></script>
+    <script src='../build/aframe-ar-nft.js'></script>
 </head>
 <style>
     .arjs-loader {
@@ -26,7 +26,9 @@
 
 <body style='margin : 0px; overflow: hidden;'>
     <!-- minimal loader shown until image descriptors are loaded -->
-
+    <div class="arjs-loader">
+        <div>Loading, please wait...</div>
+    </div>
     <a-scene vr-mode-ui='enabled: false;'
              renderer="logarithmicDepthBuffer: true; precision: medium;"
              embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
